@@ -24,7 +24,10 @@ const App = () => (
       <SurveyProvider>
         <Toaster />
         <Sonner />
-        <BrowserRouter future={{ v7_startTransition: true, v7_relativeSplatPath: true }} basename={import.meta.env.BASE_URL}>
+        <BrowserRouter
+          future={{ v7_startTransition: true, v7_relativeSplatPath: true }}
+          basename={import.meta.env.DEV ? '/' : '/abbott-survey-suite/'}
+        >
           <Routes>
             <Route path="/" element={<Dashboard />} />
             <Route path="/surveys" element={<SurveyManagement />} />
