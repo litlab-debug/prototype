@@ -26,7 +26,7 @@ const App = () => (
         <Sonner />
         <BrowserRouter
           future={{ v7_startTransition: true, v7_relativeSplatPath: true }}
-          basename={import.meta.env.DEV ? '/' : '/prototype/'}
+          basename={import.meta.env.DEV ? '/' : '/abbott-survey-suite/'}
         >
           <Routes>
             <Route path="/" element={<Dashboard />} />
