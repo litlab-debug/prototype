@@ -11,7 +11,6 @@ import { Progress } from '@/components/ui/progress';
 import { Language, LANGUAGE_NAMES } from '@/types/survey';
 import { CheckCircle2 } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
-import lighthouseLogo from '@/assets/lighthouse-logo.png';
 
 export default function RespondentSurvey() {
   const { id } = useParams();
@@ -83,8 +82,10 @@ export default function RespondentSurvey() {
       <header className="border-b bg-card">
         <div className="container max-w-2xl mx-auto px-4 py-4">
           <div className="flex items-center gap-3">
-            <img src={lighthouseLogo} alt="Lighthouse" className="h-8 w-8 rounded object-contain" />
-            <span className="font-semibold">Lighthouse Customer Survey</span>
+            <div className="h-8 w-8 rounded bg-primary flex items-center justify-center">
+              <span className="text-primary-foreground font-bold text-sm">CS</span>
+            </div>
+            <span className="font-semibold">Customer Survey</span>
           </div>
         </div>
       </header>

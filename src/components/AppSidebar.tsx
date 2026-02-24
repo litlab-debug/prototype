@@ -12,7 +12,6 @@ import {
   ClipboardList,
 } from 'lucide-react';
 import { NavLink, useLocation } from 'react-router-dom';
-import lighthouseLogo from '@/assets/lighthouse-logo.png';
 import {
   Sidebar,
   SidebarContent,
@@ -58,10 +57,12 @@ export function AppSidebar() {
     <Sidebar className="border-r border-sidebar-border">
       <SidebarHeader className="border-b border-sidebar-border p-4">
         <div className="flex items-center gap-3">
-          <img src={lighthouseLogo} alt="Lighthouse" className="h-10 w-10 rounded-lg object-contain" />
+          <div className="h-10 w-10 rounded-lg bg-primary flex items-center justify-center">
+            <span className="text-primary-foreground font-bold text-lg">CS</span>
+          </div>
           <div className="flex flex-col">
-            <span className="font-semibold text-sidebar-foreground">Lighthouse</span>
-            <span className="text-xs text-sidebar-foreground/70">Customer Survey</span>
+            <span className="font-semibold text-sidebar-foreground">Customer Survey</span>
+            <span className="text-xs text-sidebar-foreground/70">Protótipo</span>
           </div>
         </div>
       </SidebarHeader>
